@@ -1,0 +1,59 @@
+ a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: white;
+    color: darkgreen; 
+ }
+ 
+  
+.card h1 a {
+   text-decoration: none;
+   color: black; }
+ 
+ .card h1 {
+   font-size: 2em; }
+ 
+ .card h3 {
+   color: #303030; }
+ 
+ .card h5 {
+   color: #303030; }
+ 
+ .card p {
+   margin-top: 1em;
+   width: 80%;
+ }
+ 
+ .login {
+   width: 80%;
+   display: flex;
+   flex-direction: column; }
+ 
+ .signup {
+   width: 80%;
+   display: flex;
+   flex-direction: column; }
+ 
+ .signup {
+   padding: 5em; }
+ 
+ .login {
+   padding: 5em;
+   border-left: 1px solid grey; }
+ 
+ .loginContainer {
+   margin-top: 4em;
+   display: flex;
+   justify-content: space-evenly; }
+ 
+ .signup input {
+   text-decoration: none;
+   border: none;
+   font-size: 1.5em; }
+ 
+ .login input {
+   text-decoration: none;
+   border: none;
+   font-size: 1.5em; }
+  
