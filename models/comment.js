@@ -34,13 +34,13 @@ Comment.init(
       },
     },
   },
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'comment',
-  }
-);
+  });
 
 module.exports = Comment;
