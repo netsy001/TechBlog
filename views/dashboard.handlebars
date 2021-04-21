@@ -13,7 +13,7 @@
 <div class="card">
         <h1>{{user.name}}</h1>
         <h3 class="email">{{user.email}}</h3>
-        <h4 class="id">{{user.id}}</h4>
+        <h4 class="id">{{user.user_id}}</h4>
       </div>
 
       {{#each user.posts as |post| }}
@@ -21,7 +21,7 @@
         <h1>{{post.name}}</h1>
         <h3>{{post.user}}</h3>
         <p>{{post.description}}</p>
-        <a href="/api/posts/delete/{{post.id}}">Remove Post</a> 
-        <a href="/post/{{post.id}}">View Post</a> 
+        <a href="/api/posts/delete/{{post.post_id}}">Remove Post</a> 
+        <a href="/post/{{post.post_id}}">View Post</a> 
       </div>
       {{/each}}

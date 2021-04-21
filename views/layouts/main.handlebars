@@ -22,12 +22,12 @@
         <div class="container-fluid">
             <nav>
                 <ul>
-                    <li><a href="Home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     {{#if logged_in}}
-                    <li><a href="Dashboard">Dashboard</a></li>
-                    <li><a href="Logout">Logout</a></li>
+                    <li><a href="/profile">Dashboard</a></li>
+                    <li><a class="logout" href="Logout">Logout</a></li>
                     {{else}}
-                    <li><a href="Login">Login | signup</a></li>
+                    <li><a class="Login signup-form" href="Login">Login | signup</a></li>
                     {{/if}}
                 </ul>
             </nav>
@@ -35,16 +35,16 @@
     </header>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-         {{{body}}}
+            {{{body}}}
         </div>
- {{#if logged_in}}
-  <script  src="/js/logout.js"></script>
-  <script  src="/js/index.js"></script>
-  {{else}}
-    <script src="/js/login.js"></script>
-  {{/if}}
+        {{#if logged_in}}
+        <script src="/js/logout.js"></script>
+        <script src="/js/index.js"></script>
+        {{else}}
+        <script src="/js/login.js"></script>
+        {{/if}}
     </div>
-    
+
 
 
 </body>

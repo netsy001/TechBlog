@@ -2,16 +2,19 @@ const { User } = require('../models');
 
 const userData = [
     {
-        username: 'Suri',
+        name: 'Suri',
         password: 'password123',
+        email:"email@SpeechGrammarList.com",
     },
     {
-        username: 'Alekhya',
+        name: 'Alekhya',
         password: 'password123',
+        email:"email2@SpeechGrammarList.com",
     },
     {
-        username: 'Laxmi',
+        name: 'Laxmi',
         password: 'password123',
+        email:"email1@SpeechGrammarList.com",
     },
 ];
 

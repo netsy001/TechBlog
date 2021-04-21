@@ -14,6 +14,7 @@ router.get('/', async (req, res) => {
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
+    console.log(posts);
     if (!posts) {
       res.render('index');
     }
@@ -26,9 +27,9 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/post/:id', async (req, res) => {
+router.get('/post/:post_id', async (req, res) => {
   try {
-    const postData = await Post.findByPk(req.params.id, {
+    const postData = await Post.findByPk(req.params.post_id, {
       include: [
         {
           model: User,
@@ -50,7 +51,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
-router.get('/create', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
@@ -59,7 +60,7 @@ router.get('/create', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
     console.log(user);
-    res.render('profile', {
+    res.render('dashboard', {
       user,
       logged_in: true
     });

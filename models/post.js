@@ -23,7 +23,7 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    reply: {
+    Comment: {
         type: DataTypes.DATE,
         allowNull: true,
         defaultValue: null,
